@@ -20,7 +20,7 @@ group :assets do
 end
 
 # Smag: Gems needed only in production environment, not locally
-# Use 'bundle install --without production' when installing locally
+# Use 'bundle install --without production' to install locally, update Gemfile.lock
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
