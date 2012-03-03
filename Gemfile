@@ -19,6 +19,13 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# Smag: Gems needed only in production environment, not locally
+# Use 'bundle install --without production' when installing locally
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -35,3 +42,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+
