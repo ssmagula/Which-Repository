@@ -1,0 +1,3 @@
+* 3 March 2012 I added the postgresql gem to the production section of the Gemfile, but pg (postgresql db) for production on heroku only. So now we use "bundle install --production" to install gems (this ignores those).
+
+* 1 March 2012 started to work on this demo app, using the Railstuorial.com demo app chapter.
