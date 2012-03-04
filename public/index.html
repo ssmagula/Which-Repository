@@ -2,187 +2,7 @@
 <html>
   <head>
     <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-
-      #nav a {color: #663333; text-decoration:none; }
-
-      #nav a:hover {
-	    background-color: #7294AD;
-        color: white;
-        text-decoration: none;
-      }
-      
-      
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
-
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/smag_headshot.jpeg");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 74px;
-        padding-left:100px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-top:1em;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/application.css" type="text/css" media="screen" title="App main styles" charset="utf-8">
     <script type="text/javascript">
       function about() {
         info = document.getElementById('about-content');
@@ -215,37 +35,51 @@
 
       <div id="content">
         <div id="header">
-          <h1>Hola, como estas?</h1>
+	      
+          <h1>Hello Friends</h1>
           <h2>You&rsquo;re riding Ruby on Rails!</h2>
         </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
         
-	   <div id="nav" style="background-color:#DDD; height:23px; padding-left:10px; padding-top:5px; margin-top:20px; color: #ACACAC"> <a href="/users/">View all users</a>  |  <a href="/users/new/">+ New user</a>   |  <a href="/microposts/">View all posts</a></p></div>
-	    
+	   <div id="nav" style="background-color:#DDD; height:23px; padding-left:10px; padding-top:5px; color: #ACACAC"> <a href="/users/">View all users</a>  |  <a href="/users/new/">+ New user</a>   |  <a href="/microposts/">View all posts</a>   |  <a href="/microposts/new">+ New post</a></p></div>
+		<div id="about">
+         <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
+         <div id="about-content" style="display: none"></div>
+       </div>
 
         <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
+          <h1>My first Rails application</h1>
+          <h2>Some notes from Stefan on how I got started.</h2>
           <ol>
             <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
+              <h2>I installed Homebrew, RVM, Ruby, Rails, Git, and Heroku</h2>
+              <p>This <a href="http://ruby.railstutorial.org/chapters/a-demo-app?version=3.2">Ruby on Rails Tutorial</a> is the best tutorial I've found so far. The site might be better than the book since it has links to other sections for troubleshooting, etc.</p>
             </li>
 
             <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
+              <h2>Getting Ruby on Rails installed was a bit of a chore</h2>
+              <p>Take a look at this how-to: <a href="http://thinkvitamin.com/code/ruby-on-rails/installing-ruby-rails-and-mysql-on-os-x-lion/">Installing Ruby, Rails, Homebrew, RVM, and Mysql on OSX Lion</a>. I initially struggled to install MySQL on OSX 10.6.4 (hint: you must use the 64 bit version of Mysql), and ended up using OSX 10.7, with sqlite3 as the database. If you plan to host your site on Heroku (and why not?) you can skip the Mysql part.</p>
             </li>
 
             <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
+              <h2>I took some Rails lessons from a Zombie</h2>
+              <p><a href="http://Railsforzombies.com">Railsforzombies.com</a> helped me begin to grasp the model, view, controller setup. I've heard the term many times, but until I was going through some examples in the tutorials, it was hard to grasp. I recommend completing the first three lessons before you start Chapter 2. Demo App in the Rails Tutorial (above). The Zombie tutorial taught me things like: how to validate that user names and email addresses are required, and must be unique. I am looking forward to playing around more here.</p>
             </li>
+
+            <li>
+              <h2>I configured my accounts on Git (version control and open source community) and Heroku (free hosting) to work from the command line</h2>
+              <p><a href="github.com">Github.com</a> and <a href="Heroku.com">Heroku.com</a>. Heroku needs a couple special tweaks to your Gemfile, so that your site can use the Postgresql database, which Heroku needs. This is covered in the Rails Tutorial book.</p>
+            </li>
+
+            <li>
+              <h2>I pushed</h2>
+              <p>I was a bit nervous, but with my Rails Tutorial at my side, I managed to follow the directions and push the app to Git and then to Heroku. Everything worked, except when I tried to migrate the database to Heroku, I got an error. So, I went back and did a bunch of searches on the error message and landed on <a href="http://stackoverflow.com/questions/7296683/rails-3-1-pushing-to-heroku-errors-installing-postgres-adapter">this Q&amp;A in Stackoverflow.com</a> (this site is now my best friend) where others had troubleshooted the error, and had posted answers on how to fix. I managed to make the Heroku-specific edits to the Gemfile, and boom. The app was up. </p>
+            </li>
+
+            <li>
+              <h2>To come</h2>
+              <p>I'm going to hookup Bootstrap (the CSS framework) and LESS (a tool that let's you handle CSS in a more centralized way) and then once I get that working. I plan to scrap everything, read more of the Rails Tutorial, and conceive of something that might actually be useful, maybe.</p>
+            </li>
+
           </ol>
         </div>
       </div>

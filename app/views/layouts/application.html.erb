@@ -6,9 +6,14 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body style="background-color:#F9F9F9">
+	<div id="wrapper" style="margin-left:auto; margin-right: auto; width:960px; background-color:#fff; padding:1em">
+		<div id="header">
+          <h1>Hello Friends</h1>
+          <h2>You&rsquo;re riding Ruby on Rails!</h2>
+        </div>	
+		<div id="nav" style="background-color:#DDD; height:23px; padding-left:10px; padding-top:5px; margin:0px 0 20px 0; color: #ACACAC"><a href="/">Home</a>  |  <a href="/users/">View all people</a>  |  <a href="/users/new/">+ New person</a>   |  <a href="/microposts/">View all posts</a>   |  <a href="/microposts/new">+ New post</a></p></div>
+	<%= yield %>
+	</div>
 </body>
 </html>
